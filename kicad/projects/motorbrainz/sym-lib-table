@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name L298P)(type Legacy)(uri ${KIPRJMOD}/../../libraries/snapeda/L298P.lib)(options "")(descr ""))
+  (lib (name tinyPICO_Nano)(type Legacy)(uri ${KIPRJMOD}/tinyPICO_Nano.lib)(options "")(descr ""))
+  (lib (name SAMTEC-FTSH-105-01-X-DV)(type Legacy)(uri ${KIPRJMOD}/../../libraries/snapeda/SAMTEC-FTSH-105-01-X-DV.lib)(options "")(descr ""))
+  (lib (name 282836-2)(type Legacy)(uri ${KIPRJMOD}/../../libraries/snapeda/282836-2.lib)(options "")(descr ""))
+  (lib (name CDBA240LL-HF)(type Legacy)(uri ${KIPRJMOD}/../../libraries/ultralibrarian/CDBA240LL-HF.lib)(options "")(descr ""))
+)

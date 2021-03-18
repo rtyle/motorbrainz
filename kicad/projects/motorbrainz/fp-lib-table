@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name snapeda)(type KiCad)(uri ${KIPRJMOD}/../../libraries/snapeda)(options "")(descr ""))
+  (lib (name tinypico-hardware)(type KiCad)(uri ${KIPRJMOD}/../../libraries/tinypico-hardware)(options "")(descr ""))
+  (lib (name ultralibrarian)(type KiCad)(uri ${KIPRJMOD}/../../libraries/ultralibrarian)(options "")(descr ""))
+  (lib (name te)(type KiCad)(uri ${KIPRJMOD}/../../libraries/te)(options "")(descr ""))
+)

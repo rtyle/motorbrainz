@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 282836-2
+#
+DEF 282836-2 J 0 40 Y Y 1 L N
+F0 "J" -50 230 50 H V L BNN
+F1 "282836-2" -40 -180 50 H V L BNN
+F2 "CONN_282836-2" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "MANUFACTURER RECOMMENDATIONS" 0 0 50 H I L BNN "STANDARD"
+F5 "TE CONNECTIVITY" 0 0 50 H I L BNN "MANUFACTURER"
+F6 "H10" 0 0 50 H I L BNN "PARTREV"
+DRAW
+S -50 -104 200 200 0 0 10 f
+X 1 1 300 100 100 L 40 40 0 0 P 
+X 2 2 300 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
