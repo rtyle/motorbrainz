@@ -21,18 +21,6 @@ Text Label 2300 5200 0    50   ~ 0
 TDO
 Text Label 2300 5300 0    50   ~ 0
 TDI
-Text Label 850  3350 2    50   ~ 0
-RESET
-Text Label 850  3450 2    50   ~ 0
-TXD
-Text Label 850  3550 2    50   ~ 0
-RXD
-Text Label 5100 4700 0    50   ~ 0
-TXD
-Text Label 5100 4800 0    50   ~ 0
-RXD
-Text Label 5100 5000 0    50   ~ 0
-IO0
 Wire Wire Line
 	850  5100 650  5100
 Wire Wire Line
@@ -283,8 +271,6 @@ F 8 "https://www.digikey.com/en/products/detail/samtec-inc/FTR-103-02-S-S/265116
 $EndComp
 NoConn ~ 4450 6000
 NoConn ~ 3850 6000
-NoConn ~ 3950 6000
-NoConn ~ 4050 6000
 Text Label 2700 5100 2    50   ~ 0
 TMS
 Connection ~ 7400 4350
@@ -467,8 +453,6 @@ Text Label 5100 4900 0    50   ~ 0
 INA2
 Text Label 5100 5200 0    50   ~ 0
 INA1
-Text Label 2050 3550 0    50   ~ 0
-IO0
 Text Label 5100 5100 0    50   ~ 0
 ENA
 Text Label 5100 5500 0    50   ~ 0
@@ -514,30 +498,7 @@ F 3 "~" H 9900 3350 50  0001 C CNN
 	1    9900 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 604B29AD
-P 9900 3450
-F 0 "#FLG0103" H 9900 3525 50  0001 C CNN
-F 1 "PWR_FLAG" H 9900 3623 50  0000 C CNN
-F 2 "" H 9900 3450 50  0001 C CNN
-F 3 "~" H 9900 3450 50  0001 C CNN
-	1    9900 3450
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 604BCEDF
-P 2250 3350
-F 0 "#FLG0104" H 2250 3425 50  0001 C CNN
-F 1 "PWR_FLAG" H 2250 3523 50  0000 C CNN
-F 2 "" H 2250 3350 50  0001 C CNN
-F 3 "~" H 2250 3350 50  0001 C CNN
-	1    2250 3350
-	1    0    0    -1  
-$EndComp
 Connection ~ 9900 3350
-Connection ~ 9900 3450
 $Comp
 L power:+5V #PWR0101
 U 1 1 604F5E3E
@@ -552,29 +513,6 @@ $EndComp
 Wire Wire Line
 	4150 3350 4150 2900
 Connection ~ 4150 2900
-Wire Wire Line
-	2050 3450 2250 3450
-$Comp
-L SAMTEC-FTSH-105-01-X-DV:SAMTEC-FTSH-105-01-X-DV J2
-U 1 1 603D6BA0
-P 1050 3250
-F 0 "J2" H 1975 3617 50  0000 C CNN
-F 1 "FTSH-105-01-S-DV-K" H 1975 3526 50  0000 C CNN
-F 2 "snapeda:SAMTEC-FTSH-105-01-X-DV" H 1050 3250 50  0001 L BNN
-F 3 "https://www.samtec.com/partnumber/ftsh-105-01-s-dv-k" H 1050 3250 50  0001 L BNN
-F 4 "Samtec Inc." H 1050 3250 50  0001 C CNN "Manufacturer"
-F 5 "FTSH-105-01-S-DV-K" H 1050 3250 50  0001 C CNN "Manufacturer Product Number"
-F 6 "Digi-Key" H 1050 3250 50  0001 C CNN "Vendor"
-F 7 "FTSH-105-01-S-DV-K-ND" H 1050 3250 50  0001 C CNN "Vendor Part Number"
-F 8 "https://www.digikey.com/en/products/detail/samtec-inc/FTSH-105-01-S-DV-K/7433572" H 1050 3250 50  0001 C CNN "Vendor URL"
-	1    1050 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 3350 2250 3350
-Connection ~ 2250 3350
-Wire Wire Line
-	2250 3350 4050 3350
 Text Label 6500 1700 0    50   ~ 0
 SW5R
 Text Label 6500 1600 0    50   ~ 0
@@ -747,10 +685,6 @@ Wire Wire Line
 	8900 4250 8900 5350
 NoConn ~ 2050 5400
 NoConn ~ 850  5000
-NoConn ~ 2050 3250
-NoConn ~ 2050 3650
-NoConn ~ 850  3650
-NoConn ~ 850  3250
 Text Label 2700 4500 2    50   ~ 0
 SW4R
 Wire Wire Line
@@ -764,13 +698,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 5100 5100 5100
 Wire Wire Line
-	4650 5000 5100 5000
-Wire Wire Line
 	4650 4900 5100 4900
-Wire Wire Line
-	4650 4800 5100 4800
-Wire Wire Line
-	4650 4700 5100 4700
 Wire Wire Line
 	4650 4400 5100 4400
 Wire Wire Line
@@ -792,11 +720,6 @@ Wire Wire Line
 Connection ~ 7900 6400
 Wire Wire Line
 	7900 4850 7900 6400
-Connection ~ 2250 6400
-Wire Wire Line
-	2250 3450 2250 6400
-Wire Wire Line
-	650  6400 2250 6400
 Connection ~ 4350 6400
 Wire Wire Line
 	5650 6400 5900 6400
@@ -838,8 +761,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 6000 4350 6400
 Wire Wire Line
-	4250 6000 4250 6700
-Wire Wire Line
 	8900 6400 8900 6150
 Wire Wire Line
 	8650 6150 8650 6400
@@ -862,8 +783,6 @@ F 3 "" H 650 6750 50  0001 C CNN
 	1    650  6750
 	1    0    0    -1  
 $EndComp
-Text Label 4250 6700 3    50   ~ 0
-RESET
 $Comp
 L Device:R R4
 U 1 1 60670D55
@@ -1308,8 +1227,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 6250 3750 6250
 Wire Wire Line
-	2250 6400 4350 6400
-Wire Wire Line
 	2700 4300 3550 4300
 $Comp
 L SAMTEC-FTSH-105-01-X-DV:SAMTEC-FTSH-105-01-X-DV J1
@@ -1349,4 +1266,45 @@ Wire Wire Line
 	2400 900  2400 1000
 Text Notes 7300 2500 0    50   ~ 0
 Pull R side of an external open switch up or down (not both!) with resistor.\nSelection should be opposite of B side.
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 608BB36B
+P 1650 3550
+F 0 "J2" H 1707 4017 50  0000 C CNN
+F 1 "USB_B_Micro" H 1707 3926 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1800 3500 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/1050170001_sd.pdf" H 1800 3500 50  0001 C CNN
+F 4 "Molex" H 1650 3550 50  0001 C CNN "Manufacturer"
+F 5 "1050170001" H 1650 3550 50  0001 C CNN "Manufacturer Product Number"
+F 6 "Digi-Key" H 1650 3550 50  0001 C CNN "Vendor"
+F 7 "WM1399CT-ND" H 1650 3550 50  0001 C CNN "Vendor Part Number"
+F 8 "https://www.digikey.com/en/products/detail/molex/1050170001/2350832" H 1650 3550 50  0001 C CNN "Vendor URL"
+	1    1650 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 3750
+Wire Wire Line
+	650  6400 4350 6400
+Wire Wire Line
+	1650 3950 1550 3950
+Wire Wire Line
+	650  3950 650  5100
+Connection ~ 1550 3950
+Wire Wire Line
+	1550 3950 650  3950
+Connection ~ 650  5100
+Text Label 1950 3550 0    50   ~ 0
+D+
+Text Label 1950 3650 0    50   ~ 0
+D-
+Text Label 4050 6000 3    50   ~ 0
+D-
+Text Label 3950 6000 3    50   ~ 0
+D+
+NoConn ~ 4650 4700
+NoConn ~ 4650 4800
+NoConn ~ 4650 5000
+NoConn ~ 4250 6000
+Wire Wire Line
+	1950 3350 4050 3350
 $EndSCHEMATC
