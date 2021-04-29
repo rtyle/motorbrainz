@@ -17,6 +17,6 @@ The esp-prog LED indicators are
 * green TX to ESP32
 
 Warning: motorbrainz ties its external 12V ground to esp-prog ground (via cabled JTAG ground and ESP-PROG ground).
-This should be OK as long as one or both of the esp-prog and 12V power supplies are isolated.
+This should be OK as long all or all but one of the power supplies are isolated.
 
 motorbrainz 5V can come from its +12V source (by way of its LDO voltage regulator) or ESP-PROG 5V by setting a jumper.
