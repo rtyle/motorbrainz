@@ -1,8 +1,8 @@
 # motorbrainz
 PCB with ESP32 microcontroller (brainz) and L298 dual full bridge (motor) driver.
 
-The ESP32 of the [TinyPICO NANO](https://unexpectedmaker.com/shop/tinypico-nano) on the motorbrainz board can be programmed by a host over the USB connection.
-The ESP32 can be debugged by a host over the JTAG connection which is compatible through the USB intefaces on an [esp-prog](https://www.digikey.com/en/products/detail/espressif-systems/ESP-PROG/10259352) board, or equivalent.
+The ESP32 of the [TinyPICO NANO](https://unexpectedmaker.com/shop/tinypico-nano) can be programmed by a host over the USB connection.
+The ESP32 can be debugged by a host over the JTAG connection which is compatible with an [esp-prog](https://www.digikey.com/en/products/detail/espressif-systems/ESP-PROG/10259352) board, or equivalent.
 
 The esp-prog BOOT and RST will not work because the esp-prog programming interface is not used.
 The esp-prog jumper settings will have no effect.
